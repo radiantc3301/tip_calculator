@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+</head>
+<body>
+<div id = main>
+  <div id = 'starting-half'>
+    <p id = 'first-line'>S P L I</p>
+    <p id = 'second-line'>T T E R</p>
+  </div>
+  <div id = 'main-half'>
+    <div id = 'main-upper-half'>
+      <div id = 'bill'>
+          <p class = 'text' id = 'text-bill'>Bill</p>
+          <input type="text" id = 'amount' placeholder =  '0'>
+      </div>
+      <div id = 'select-tip'>
+          <p class = 'text' id = 'text-tip-select'>Select Tip</p>
+          <button id = 'bt1' class = 'button1'>5%</button>
+          <button id = 'bt2' class = 'button1'>10%</button>
+          <button id = 'bt3' class = 'button1'>15%</button>
+          <button id = 'bt4' class = 'button1'>20%</button>
+          <button id = 'bt5' class = 'button1'>50%</button>
+          <input type="text" id = 'custom' placeholder = 'Custom'>
+      </div>
+      <div id = people>
+          <p class = 'text'>Number of People</p>
+          <input type="text" id = 'numberp' placeholder = '0'>
+      </div>
+    </div>
+    <div id = 'bottom-box'>
+      <div>
+        <p id = 'tip1'>Tip Amount</p>
+        <span id = 'tip2'>₹0.00</span><br>
+        <p id = 'tip3'>/ person</p>
+      </div>
+      <div>
+        <p id = 'total1'>Total</p>
+        <span id = 'total2'>₹0.00</span><br>
+        <p id = 'total3'>/ person</p>
+      </div>
+      <button id = 'finalbtn' onclick = 'calculate()'>CALCULATE</button>
+      <button id = 'last' onclick = 'reset()'>RESET</button>
+    </div>
+  </div>
+</div>
+
+<script src = "/script.js"></script>
+</body>
+</html>
